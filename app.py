@@ -1281,6 +1281,10 @@ async def delete_all_conversations():
         return jsonify({"error": str(e)}), 500
 
 
+@bp.route("/docs", methods=["GET"])
+async def show_deploy():
+    return {"docs" : "youssef is working"}
+    
 @bp.route("/history/clear", methods=["POST"])
 async def clear_messages():
     ## get the user id from the request headers
