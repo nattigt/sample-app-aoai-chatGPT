@@ -20,7 +20,7 @@ jobs:
         # Container registry password
         password: ${{ secrets.SAMPLEAPP_ACR_PASSWORD }}
         # Container registry server url
-        login-server: ${{ secrets.LOGIN-SERVER }}
+        login-server: ${{ secrets.LOGINSERVER }}
         
     - uses: actions/checkout@v3
     - name: Build the Docker image
